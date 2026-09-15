@@ -17,16 +17,20 @@ const songs = [
     { 
         title: "Yego", 
         file: "music/DMS - Yego.mp3",
-        artist: "DMS"
+        artist: "DMS",
+        cover: "images/yego.png"
     },
     { 
         title: "Ku rutonde", 
         file: "music/kurutonde by mahoni (2).mp3.mp3", 
-        artist: "Mahoni Boni" },
-        { 
-            title: "Fanya kazi", 
-            file: "music/Fanya kazi.mp3",
-            artist: "Young G." 
+        artist: "MC Mahoni Boni",
+        cover: "images/kurutonde.jpg"
+    },
+    { 
+        title: "Fanya kazi", 
+        file: "music/Fanya kazi.mp3",
+        artist: "Young G.", 
+        cover: "images/fanyakazi.jpg"
         },
         
 ];
@@ -41,6 +45,7 @@ function loadSong(index) { // Load the song at the given index
     audio.src = song.file;
     document.getElementById('song-title').textContent = song.title;
     document.getElementById('song-artist').textContent = song.artist;
+    document.getElementById('album-art').src = song.cover;
 }
 
 playButton.addEventListener('click', () => { // play button click handler
