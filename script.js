@@ -18,7 +18,7 @@ const songs = [
         title: "Yego", 
         file: "music/DMS - Yego.mp3",
         artist: "DMS",
-        cover: "images/yego.png"
+        cover: "images/Yego.png"
     },
     { 
         title: "Ku rutonde", 
